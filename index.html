@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <input type="text" id="imageUrl" placeholder="URL de la imagen">
+        <input type="text" id="imageTitle" placeholder="Título de la imagen">
+        <button id="addImage">Añadir Imagen</button>
+        <div id="gallery" class="gallery"></div>
+    </div>
+    <div id="modal" class="modal">
+        <span id="closeModal" class="close">&times;</span>
+        <img id="modalImage" class="modal-content">
+        <div id="caption" class="caption"></div>
+        <div class="modal-actions">
+            <input type="text" id="editImageUrl" placeholder="URL de la imagen">
+            <input type="text" id="editImageTitle" placeholder="Título de la imagen">
+            <button id="saveChanges">Guardar Cambios</button>
+            <button id="deleteImage" class="delete-btn">Eliminar Imagen</button>
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
